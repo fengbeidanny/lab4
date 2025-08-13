@@ -1,0 +1,1 @@
+g++ -Og -g -O2 -g -DNDEBUG CMakeFiles/bicgstab.dir/src/bicgstab/solver.c.o CMakeFiles/judger.dir/src/judger.cpp.o CMakeFiles/judger.dir/src/main.cpp.o -o bicgstab 

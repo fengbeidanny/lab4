@@ -1,0 +1,4 @@
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/judger.dir
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/bicgstab.dir
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/edit_cache.dir
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/rebuild_cache.dir
