@@ -5,13 +5,13 @@
 # compile CXX with g++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/hpc101/h3220102704/src/lab4/include
+C_INCLUDES = -I/home/hpc101/h3220102704/src/lab4/include -isystem /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include
 
 C_FLAGS = -Og -g -O2 -g -DNDEBUG -fopenmp
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hpc101/h3220102704/src/lab4/include
+CXX_INCLUDES = -I/home/hpc101/h3220102704/src/lab4/include -isystem /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include
 
 CXX_FLAGS = -Og -g -O2 -g -DNDEBUG
 

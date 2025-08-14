@@ -3,17 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include <omp.h>
-
-void gemv(double *__restrict y, double *__restrict A, double *__restrict x, int N)
+#include <mpi.h>
+void gemv(double *y_local, double *A_local, double *x, int N, int local_rows)
 {
-// y = A * x
-#pragma omp parallel for schedule(static)
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < local_rows; i++)
     {
-        y[i] = 0.0;
+        y_local[i] = 0.0;
         for (int j = 0; j < N; j++)
         {
-            y[i] += A[i * N + j] * x[j];
+            y_local[i] += A_local[i * N + j] * x[j];
         }
     }
 }

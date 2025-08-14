@@ -1,13 +1,17 @@
 #include <cstdlib>
 #include <iostream>
 #include "judger.h"
+#include <mpi.h>
 
 extern "C" int bicgstab(int N, double *A, double *b, double *x, int max_iter, double tol);
 
 int main(int argc, char *argv[])
 {
+
     int world_size, world_rank = 0;
+
     // When using MPI, please remember to initialize here
+    MPI_Init(&argc, &argv);
 
     if (argc != 2)
     {
@@ -47,5 +51,6 @@ int main(int argc, char *argv[])
     free(x);
 
     // When using MPI, please remember to finalize here
+    MPI_Finalize();
     return 0;
 }

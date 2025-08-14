@@ -3,7 +3,7 @@ project(bicgstab C CXX Fortran)
 
 find_package(OpenMP REQUIRED)
 # Uncomment below is MPI env is available
-# find_package(MPI REQUIRED)
+find_package(MPI REQUIRED)
 
 # Set Compiler
 set(CMAKE_C_COMPILER "gcc")
@@ -17,6 +17,8 @@ set(CMAKE_Fortran_FLAGS "-Og -g")
 
 # Include headers
 include_directories(include)
+include_directories(${MPI_INCLUDE_PATH})
+
 
 # Add common source files
 file(GLOB COMMON_SOURCES "src/*.cpp")
@@ -24,15 +26,18 @@ file(GLOB COMMON_SOURCES "src/*.cpp")
 # Create an object library for common sources
 add_library(judger OBJECT ${COMMON_SOURCES})
 
-# If found C implementation, add it to the build
+# Add C implementation
 if(EXISTS "${CMAKE_SOURCE_DIR}/src/bicgstab/solver.c")
   add_executable(bicgstab src/bicgstab/solver.c $<TARGET_OBJECTS:judger>)
+
   if(OpenMP_C_FOUND)
     target_link_libraries(bicgstab PUBLIC OpenMP::OpenMP_C)
   endif()
+
+  target_link_libraries(bicgstab PUBLIC MPI::MPI_C)
 endif()
 
-# If found Fortran implementation, add it to the build
+# Add Fortran implementation
 if(EXISTS "${CMAKE_SOURCE_DIR}/src/bicgstab/solver.f90")
   add_executable(bicgstab-fortran src/bicgstab/solver.f90 $<TARGET_OBJECTS:judger>)
   if(OpenMP_Fortran_FOUND)

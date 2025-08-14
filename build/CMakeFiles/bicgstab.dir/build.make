@@ -97,7 +97,10 @@ bicgstab: CMakeFiles/judger.dir/src/judger.cpp.o
 bicgstab: CMakeFiles/judger.dir/src/main.cpp.o
 bicgstab: CMakeFiles/bicgstab.dir/build.make
 bicgstab: /usr/lib/gcc/x86_64-linux-gnu/12/libgomp.so
+bicgstab: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/lib/libmpi.so
+bicgstab: /usr/lib/x86_64-linux-gnu/librt.a
 bicgstab: /usr/lib/x86_64-linux-gnu/libpthread.a
+bicgstab: /usr/lib/x86_64-linux-gnu/libdl.a
 bicgstab: CMakeFiles/bicgstab.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hpc101/h3220102704/src/lab4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bicgstab"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bicgstab.dir/link.txt --verbose=$(VERBOSE)

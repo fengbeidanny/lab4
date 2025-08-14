@@ -1,0 +1,279 @@
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-Wsktv7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fdbdd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fdbdd.dir/build.make CMakeFiles/cmTC_fdbdd.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-Wsktv7'
+Building C object CMakeFiles/cmTC_fdbdd.dir/test_mpi.c.o
+/usr/bin/cc   -fno-omit-frame-pointer -fopenmp  -o CMakeFiles/cmTC_fdbdd.dir/test_mpi.c.o -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-Wsktv7/test_mpi.c
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-Wsktv7/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+    1 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_fdbdd.dir/build.make:78: CMakeFiles/cmTC_fdbdd.dir/test_mpi.c.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-Wsktv7'
+gmake: *** [Makefile:127: cmTC_fdbdd/fast] Error 2
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-YPatox
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6c8ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6c8ca.dir/build.make CMakeFiles/cmTC_6c8ca.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-YPatox'
+Building CXX object CMakeFiles/cmTC_6c8ca.dir/test_mpi.cpp.o
+/usr/bin/c++   -fno-omit-frame-pointer -fopenmp  -o CMakeFiles/cmTC_6c8ca.dir/test_mpi.cpp.o -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-YPatox/test_mpi.cpp
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-YPatox/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+    1 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_6c8ca.dir/build.make:78: CMakeFiles/cmTC_6c8ca.dir/test_mpi.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-YPatox'
+gmake: *** [Makefile:127: cmTC_6c8ca/fast] Error 2
+
+
+
+The MPI test test_mpi for Fortran in mode F77_HEADER failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-dHIyMu
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a97bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a97bc.dir/build.make CMakeFiles/cmTC_a97bc.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-dHIyMu'
+Building Fortran object CMakeFiles/cmTC_a97bc.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-dHIyMu/test_mpi.f90 -o CMakeFiles/cmTC_a97bc.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-dHIyMu/test_mpi.f90:3:0:
+
+    3 |       include 'mpif.h'
+      | 
+Fatal Error: Cannot open included file ‘mpif.h’
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a97bc.dir/build.make:78: CMakeFiles/cmTC_a97bc.dir/test_mpi.f90.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-dHIyMu'
+gmake: *** [Makefile:127: cmTC_a97bc/fast] Error 2
+
+
+
+The MPI test test_mpi for Fortran in mode F90_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-8UFf4E
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_83310/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83310.dir/build.make CMakeFiles/cmTC_83310.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-8UFf4E'
+Building Fortran object CMakeFiles/cmTC_83310.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-8UFf4E/test_mpi.f90 -o CMakeFiles/cmTC_83310.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-8UFf4E/test_mpi.f90:2:11:
+
+    2 |       use mpi
+      |           1
+Fatal Error: Cannot open module file ‘mpi.mod’ for reading at (1): No such file or directory
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_83310.dir/build.make:78: CMakeFiles/cmTC_83310.dir/test_mpi.f90.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-8UFf4E'
+gmake: *** [Makefile:127: cmTC_83310/fast] Error 2
+
+
+
+The MPI test test_mpi for Fortran in mode F08_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-AyIYdS
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c09ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c09ac.dir/build.make CMakeFiles/cmTC_c09ac.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-AyIYdS'
+Building Fortran object CMakeFiles/cmTC_c09ac.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-AyIYdS/test_mpi.f90 -o CMakeFiles/cmTC_c09ac.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-AyIYdS/test_mpi.f90:2:11:
+
+    2 |       use mpi_f08
+      |           1
+Fatal Error: Cannot open module file ‘mpi_f08.mod’ for reading at (1): No such file or directory
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_c09ac.dir/build.make:78: CMakeFiles/cmTC_c09ac.dir/test_mpi.f90.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-AyIYdS'
+gmake: *** [Makefile:127: cmTC_c09ac/fast] Error 2
+
+
+
+The MPI test test_mpi for Fortran in mode F77_HEADER_NOKIND failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-G6I96P
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a59d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a59d6.dir/build.make CMakeFiles/cmTC_a59d6.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-G6I96P'
+Building Fortran object CMakeFiles/cmTC_a59d6.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-G6I96P/test_mpi.f90 -o CMakeFiles/cmTC_a59d6.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-G6I96P/test_mpi.f90:3:0:
+
+    3 |       include 'mpif.h'
+      | 
+Fatal Error: Cannot open included file ‘mpif.h’
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a59d6.dir/build.make:78: CMakeFiles/cmTC_a59d6.dir/test_mpi.f90.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-G6I96P'
+gmake: *** [Makefile:127: cmTC_a59d6/fast] Error 2
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_020ab/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc'
+/usr/bin/gmake  -f CMakeFiles/cmTC_020ab.dir/build.make CMakeFiles/cmTC_020ab.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc'
+Building C object CMakeFiles/cmTC_020ab.dir/test_mpi.c.o
+/usr/bin/cc   -fno-omit-frame-pointer -fopenmp  -o CMakeFiles/cmTC_020ab.dir/test_mpi.c.o -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc/test_mpi.c
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+    1 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_020ab.dir/build.make:78: CMakeFiles/cmTC_020ab.dir/test_mpi.c.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc'
+gmake[1]: *** [Makefile:127: cmTC_020ab/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-l9n3Qc'
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6ed9/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f6ed9.dir/build.make CMakeFiles/cmTC_f6ed9.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025'
+Building CXX object CMakeFiles/cmTC_f6ed9.dir/test_mpi.cpp.o
+/usr/bin/c++   -fno-omit-frame-pointer -fopenmp  -o CMakeFiles/cmTC_f6ed9.dir/test_mpi.cpp.o -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025/test_mpi.cpp
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+    1 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_f6ed9.dir/build.make:78: CMakeFiles/cmTC_f6ed9.dir/test_mpi.cpp.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025'
+gmake[1]: *** [Makefile:127: cmTC_f6ed9/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-vXB025'
+
+
+
+The MPI test test_mpi for Fortran in mode F77_HEADER failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a4c7b/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI'
+/usr/bin/gmake  -f CMakeFiles/cmTC_a4c7b.dir/build.make CMakeFiles/cmTC_a4c7b.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI'
+Building Fortran object CMakeFiles/cmTC_a4c7b.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI/test_mpi.f90 -o CMakeFiles/cmTC_a4c7b.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI/test_mpi.f90:3:0:
+
+    3 |       include 'mpif.h'
+      | 
+Fatal Error: Cannot open included file ‘mpif.h’
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_a4c7b.dir/build.make:78: CMakeFiles/cmTC_a4c7b.dir/test_mpi.f90.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI'
+gmake[1]: *** [Makefile:127: cmTC_a4c7b/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-2fxMMI'
+
+
+
+The MPI test test_mpi for Fortran in mode F90_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12c05/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw'
+/usr/bin/gmake  -f CMakeFiles/cmTC_12c05.dir/build.make CMakeFiles/cmTC_12c05.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw'
+Building Fortran object CMakeFiles/cmTC_12c05.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw/test_mpi.f90 -o CMakeFiles/cmTC_12c05.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw/test_mpi.f90:2:11:
+
+    2 |       use mpi
+      |           1
+Fatal Error: Cannot open module file ‘mpi.mod’ for reading at (1): No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_12c05.dir/build.make:78: CMakeFiles/cmTC_12c05.dir/test_mpi.f90.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw'
+gmake[1]: *** [Makefile:127: cmTC_12c05/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-mhHRfw'
+
+
+
+The MPI test test_mpi for Fortran in mode F08_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_714db/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI'
+/usr/bin/gmake  -f CMakeFiles/cmTC_714db.dir/build.make CMakeFiles/cmTC_714db.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI'
+Building Fortran object CMakeFiles/cmTC_714db.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI/test_mpi.f90 -o CMakeFiles/cmTC_714db.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI/test_mpi.f90:2:11:
+
+    2 |       use mpi_f08
+      |           1
+Fatal Error: Cannot open module file ‘mpi_f08.mod’ for reading at (1): No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_714db.dir/build.make:78: CMakeFiles/cmTC_714db.dir/test_mpi.f90.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI'
+gmake[1]: *** [Makefile:127: cmTC_714db/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-kuOkKI'
+
+
+
+The MPI test test_mpi for Fortran in mode F77_HEADER_NOKIND failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2b265/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2b265.dir/build.make CMakeFiles/cmTC_2b265.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18'
+Building Fortran object CMakeFiles/cmTC_2b265.dir/test_mpi.f90.o
+/usr/bin/gfortran    -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18/test_mpi.f90 -o CMakeFiles/cmTC_2b265.dir/test_mpi.f90.o
+/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18/test_mpi.f90:3:0:
+
+    3 |       include 'mpif.h'
+      | 
+Fatal Error: Cannot open included file ‘mpif.h’
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_2b265.dir/build.make:78: CMakeFiles/cmTC_2b265.dir/test_mpi.f90.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18'
+gmake[1]: *** [Makefile:127: cmTC_2b265/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-rZtM18'
+
+
+
+The MPI test test_mpi for Fortran in mode F08_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-sPVKlU
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_557d8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_557d8.dir/build.make CMakeFiles/cmTC_557d8.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-sPVKlU'
+Building Fortran object CMakeFiles/cmTC_557d8.dir/test_mpi.f90.o
+/usr/bin/gfortran  -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi/gfortran/12.4.0 -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi  -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-sPVKlU/test_mpi.f90 -o CMakeFiles/cmTC_557d8.dir/test_mpi.f90.o
+f951: Fatal Error: Reading module ‘/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi/mpi_f08.mod’ at line 1 column 2: Unexpected EOF
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_557d8.dir/build.make:78: CMakeFiles/cmTC_557d8.dir/test_mpi.f90.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-sPVKlU'
+gmake: *** [Makefile:127: cmTC_557d8/fast] Error 2
+
+
+
+The MPI test test_mpi for Fortran in mode F08_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-1zj5YJ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a529d/fast && gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-1zj5YJ'
+/usr/bin/gmake  -f CMakeFiles/cmTC_a529d.dir/build.make CMakeFiles/cmTC_a529d.dir/build
+gmake[2]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-1zj5YJ'
+Building Fortran object CMakeFiles/cmTC_a529d.dir/test_mpi.f90.o
+/usr/bin/gfortran  -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi/gfortran/12.4.0 -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi  -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-1zj5YJ/test_mpi.f90 -o CMakeFiles/cmTC_a529d.dir/test_mpi.f90.o
+f951: Fatal Error: Reading module ‘/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi/mpi_f08.mod’ at line 1 column 2: Unexpected EOF
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cmTC_a529d.dir/build.make:78: CMakeFiles/cmTC_a529d.dir/test_mpi.f90.o] Error 1
+gmake[2]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-1zj5YJ'
+gmake[1]: *** [Makefile:127: cmTC_a529d/fast] Error 2
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-1zj5YJ'
+
+
+
+The MPI test test_mpi for Fortran in mode F08_MODULE failed to compile with the following output:
+Change Dir: /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-y1NHkN
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d21b4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d21b4.dir/build.make CMakeFiles/cmTC_d21b4.dir/build
+gmake[1]: Entering directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-y1NHkN'
+Building Fortran object CMakeFiles/cmTC_d21b4.dir/test_mpi.f90.o
+/usr/bin/gfortran  -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi/gfortran/12.4.0 -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include -I/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi  -c /home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-y1NHkN/test_mpi.f90 -o CMakeFiles/cmTC_d21b4.dir/test_mpi.f90.o
+f951: Fatal Error: Reading module ‘/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-mpi-2021.14.1-jdda552mqvxz4g6vuwkboc7biptbtgge/mpi/2021.14/include/mpi/mpi_f08.mod’ at line 1 column 2: Unexpected EOF
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d21b4.dir/build.make:78: CMakeFiles/cmTC_d21b4.dir/test_mpi.f90.o] Error 1
+gmake[1]: Leaving directory '/home/hpc101/h3220102704/src/lab4/build/CMakeFiles/CMakeScratch/TryCompile-y1NHkN'
+gmake: *** [Makefile:127: cmTC_d21b4/fast] Error 2
+
+
+
