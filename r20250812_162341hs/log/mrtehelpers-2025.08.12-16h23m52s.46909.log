@@ -1,3 +1,0 @@
-67 [140625918994112] INFO mrtehelpers.mrteenv <> - Product libs directory: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64
-67 [140625918994112] INFO mrtehelpers.mrteenv <> - File mask: amplxe_samplingmrte_clrprof*
-109 [140625918994112] INFO mrtehelpers.mrteenv <> - File name: libamplxe_samplingmrte_clrprof_1.0.so

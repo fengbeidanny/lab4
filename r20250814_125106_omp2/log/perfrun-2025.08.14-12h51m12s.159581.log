@@ -1,0 +1,124 @@
+1 [139733208823616] INFO perfrun.launcher <> - Launcher main begin
+3 [139733208823616] INFO perfrun.launcher <> - MessageCatalogInit finished
+3 [139733208823616] INFO perfrun.launcher <> - Launcher instance created
+3 [139733208823616] INFO perfrun.launcher <> - argc = 7; cmdline = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 6 --option-file /home/hpc101/h3220102704/src/lab4/r20250814_125106_omp2/config/runss.options 
+43 [139733208823616] INFO perfrun.perfcollector <> - SEP tool path: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/sep
+48 [139733208823616] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+48 [139733208823616] INFO perfrun.launcher <> - create file finder object
+48 [139733208823616] INFO perfrun.launcher <> - create a result directory: pattern = /home/hpc101/h3220102704/src/lab4/r20250814_125106_omp2 pid = 4294967295
+51 [139733208823616] INFO perfrun.sdk <> - checked that the directory /home/hpc101/h3220102704/src/lab4/r20250814_125106_omp2 is a local directory
+51 [139733208823616] INFO perfrun.sdk <> - the directory /home/hpc101/h3220102704/src/lab4/r20250814_125106_omp2 is located on a share or its FS ID is unknown 26985
+51 [139733208823616] INFO perfrun.sdk <> - checked that the directory /tmp/amplxe-tmp-h3220102704 is a local directory
+51 [139733208823616] INFO perfrun.sdk <> - the directory /tmp/amplxe-tmp-h3220102704 is a local directory with FS type ID 61267
+52 [139733208823616] INFO perfrun.launcher <> - Create a local result directory /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117 due to the user result path /home/hpc101/h3220102704/src/lab4/r20250814_125106_omp2 is located on a share
+52 [139733208823616] INFO perfrun.launcher <> - create data directory = /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0
+52 [139733208823616] INFO perfrun.launcher <> - create data directory = /home/hpc101/h3220102704/src/lab4/r20250814_125106_omp2/data.0
+53 [139733208823616] INFO perfrun.launcher <> - Creating the master collection flag
+54 [139733208823616] INFO perfrun.launcher <> - Done creating the master collection flag
+60 [139733048141504] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+61 [139733048141504] INFO perfrun.sdk <> - Allocating TMU :/tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0/systemcollector-159581-M700.sc
+61 [139733048141504] INFO perfrun.system <> - Tpss based collection
+61 [139733048141504] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+61 [139733048141504] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+61 [139733048141504] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+61 [139733048141504] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+61 [139733048141504] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+61 [139733048141504] INFO perfrun.mrte <> - system-wide mode is 0
+61 [139733048141504] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+84 [139733048141504] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0
+84 [139733048141504] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=M700
+84 [139733048141504] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime:/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime
+84 [139733048141504] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime:/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime
+84 [139733048141504] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+84 [139733048141504] INFO perfrun.mrte <> - CORECLR_PROFILER={AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+84 [139733048141504] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+84 [139733048141504] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+84 [139733048141504] INFO perfrun.mrte <> - Data directory: /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0
+84 [139733048141504] INFO perfrun.mrte <> - Mrte plugin is initialized
+84 [139733048141504] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [sep] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.tpss <> - initialize tpss controller
+84 [139733048141504] INFO perfrun.tpss <> - configure collection mode: value = cpu:counters:nostack
+84 [139733048141504] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+84 [139733048141504] INFO perfrun.tpss <> - default obj-size-min=1024
+84 [139733048141504] INFO perfrun.tpss <> - default hash-table-size=0
+84 [139733048141504] INFO perfrun.launcher <> - plugin [media] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+84 [139733048141504] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+84 [139733208823616] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime:/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime
+84 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime/libittnotify_collector.so
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime/libittnotify_collector.so
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime/libittnotify_collector.so
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime/libittnotify_collector.so
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: CCL_ITT_LEVEL = 1
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = M700
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:amplxe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime:/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/runtime:/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/runtime
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+85 [139733208823616] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+85 [139733208823616] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+86 [139733208823616] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./build/bicgstab data/case_2001.bin
+86 [139733208823616] INFO perfrun.launcher <> - Launcher: command line to start after modification = /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/pin -error_file /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib64/libtpsstool.so -t /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/lib32/libtpsstool.so -server_name tpss_ipc.159581 -prd_dir /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0 -- ./build/bicgstab data/case_2001.bin
+86 [139733208823616] INFO perfrun.launcher <> - ProcessCreator object was created
+87 [139733208823616] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+95 [139733048141504] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied [system:13]: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+102 [139733048141504] INFO perfrun.sdk <> - runCmd: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/sep -platform-info
+103 [139733048141504] INFO perfrun.sdk <> - runCmd started PID 159587
+108 [139733048141504] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1083
+108 [139733048141504] INFO perfrun.sdk <> - runCmd: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/amplxe-perf stat --iostat=list
+108 [139733048141504] INFO perfrun.sdk <> - runCmd started PID 159588
+110 [139733048141504] WARN perfrun.sdk <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1314
+112 [139733048141504] INFO perfrun.sdk <> - runCmd: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/sep -platform-info
+112 [139733048141504] INFO perfrun.sdk <> - runCmd started PID 159589
+117 [139733048141504] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1083
+117 [139733048141504] INFO perfrun.sdk <> - runCmd: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/sep -platform-info
+118 [139733048141504] INFO perfrun.sdk <> - runCmd started PID 159590
+123 [139733048141504] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1083
+123 [139733048141504] INFO perfrun.sdk <> - runCmd: /pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/amplxe-perf stat --iostat=list
+123 [139733048141504] INFO perfrun.sdk <> - runCmd started PID 159591
+125 [139733048141504] WARN perfrun.sdk <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1314
+125 [139733048141504] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:205
+125 [139733048141504] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:450
+203 [139733048141504] INFO perfrun.vdso <> - Helper runtool '/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin32/amplxe-runss -dump-vdso -r /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117 --tmp-dir /tmp/amplxe-tmp-h3220102704' returned 0
+272 [139733048141504] INFO perfrun.vdso <> - Helper runtool '/pxe/opt/spack/opt/spack/linux-debian12-haswell/gcc-12.2.0/intel-oneapi-vtune-2025.0.1-s3hypw5k7eb77lzbrsr5zmqbbwk3ozkd/vtune/2025.0/bin64/amplxe-runss -dump-vdso -r /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117 --tmp-dir /tmp/amplxe-tmp-h3220102704' returned 0
+272 [139733048141504] INFO perfrun.itt <> - start itt controller for pid #159586
+272 [139733048141504] INFO perfrun.tpss <> - start tpss controller for pid #159586
+323 [139733208823616] INFO perfrun.launcher <> - Launcher: all plugins were started
+323 [139733208823616] INFO perfrun.launcher <> - DirectoryMonitor object was created
+323 [139733208823616] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+323 [139733208823616] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+323 [139733208823616] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+323 [139733208823616] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+327 [139733208823616] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+70316 [139733208823616] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+70319 [139733048141504] INFO perfrun.itt <> - detach itt controller
+70319 [139733048141504] INFO perfrun.itt <> - detach itt controller done
+70319 [139733048141504] INFO perfrun.tpss <> - stop tpss controller
+70319 [139733048141504] INFO perfrun.sdk <> - De-allocating TMU: /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0/systemcollector-159581-M700.sc
+70319 [139733048141504] INFO perfrun.system <> - closed the system trace file: /tmp/amplxe-tmp-h3220102704/amplxe-res-159581-176986615343117/data.0/systemcollector-159581-M700.sc
+70319 [139733208823616] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+70319 [139733208823616] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+70319 [139733208823616] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+70319 [139733208823616] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+70319 [139733208823616] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+70337 [139733208823616] INFO perfrun.launcher <> - Application exit code: 0
+70337 [139733208823616] INFO perfrun.launcher <> - Exit code: 0

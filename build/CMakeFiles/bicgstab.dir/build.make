@@ -96,6 +96,8 @@ bicgstab: CMakeFiles/bicgstab.dir/src/bicgstab/solver.c.o
 bicgstab: CMakeFiles/judger.dir/src/judger.cpp.o
 bicgstab: CMakeFiles/judger.dir/src/main.cpp.o
 bicgstab: CMakeFiles/bicgstab.dir/build.make
+bicgstab: /usr/lib/gcc/x86_64-linux-gnu/12/libgomp.so
+bicgstab: /usr/lib/x86_64-linux-gnu/libpthread.a
 bicgstab: CMakeFiles/bicgstab.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hpc101/h3220102704/src/lab4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bicgstab"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bicgstab.dir/link.txt --verbose=$(VERBOSE)

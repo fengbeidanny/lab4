@@ -68,8 +68,11 @@ CMakeFiles/bicgstab.dir/src/bicgstab/solver.c.o: /home/hpc101/h3220102704/src/la
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/strings.h
+  /usr/include/strings.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/omp.h
 
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/omp.h:
 
 /usr/include/strings.h:
 

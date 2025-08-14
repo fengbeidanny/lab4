@@ -27,9 +27,15 @@ add_library(judger OBJECT ${COMMON_SOURCES})
 # If found C implementation, add it to the build
 if(EXISTS "${CMAKE_SOURCE_DIR}/src/bicgstab/solver.c")
   add_executable(bicgstab src/bicgstab/solver.c $<TARGET_OBJECTS:judger>)
+  if(OpenMP_C_FOUND)
+    target_link_libraries(bicgstab PUBLIC OpenMP::OpenMP_C)
+  endif()
 endif()
 
 # If found Fortran implementation, add it to the build
 if(EXISTS "${CMAKE_SOURCE_DIR}/src/bicgstab/solver.f90")
   add_executable(bicgstab-fortran src/bicgstab/solver.f90 $<TARGET_OBJECTS:judger>)
+  if(OpenMP_Fortran_FOUND)
+    target_link_libraries(bicgstab-fortran PUBLIC OpenMP::OpenMP_Fortran)
+  endif()
 endif()

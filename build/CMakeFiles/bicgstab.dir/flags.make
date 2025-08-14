@@ -7,7 +7,7 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/hpc101/h3220102704/src/lab4/include
 
-C_FLAGS = -Og -g -O2 -g -DNDEBUG
+C_FLAGS = -Og -g -O2 -g -DNDEBUG -fopenmp
 
 CXX_DEFINES = 
 
